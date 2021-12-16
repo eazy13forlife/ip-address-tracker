@@ -1,3 +1,23 @@
+@use "../abstracts";
+
+:root {
+  //color
+  --grey-dark-2: hsl(0, 0%, 17%);
+  --grey-dark: hsl(0, 0%, 59%);
+
+  //font
+  --primary-font: "Rubik", sans-serif;
+
+  --fs-600: 3.2rem;
+  --fs-500: 2.6rem;
+  --fs-400: 1.8rem;
+  --fs-300: 1.2rem;
+  @include abstracts.respondMax(abstracts.$mobile) {
+    --fs-600: 2.6rem;
+    --fs-500: 2rem;
+    --fs-300: 1rem;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -14,7 +34,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   box-sizing: border-box;
-  font-size: 1.4rem;
+  font-size: var(--fs-400);
 }
 
 img {
@@ -28,9 +48,9 @@ select {
   font: inherit;
 }
 
-button{
-  border:none;
-  background-color:transparent;
+button {
+  border: none;
+  background-color: transparent;
 }
 
 @media (prefers-reduced-motion: reduce) {
