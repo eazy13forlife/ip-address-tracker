@@ -28,6 +28,11 @@ select {
   font: inherit;
 }
 
+button{
+  border:none;
+  background-color:transparent;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
