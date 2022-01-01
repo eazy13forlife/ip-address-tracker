@@ -1,0 +1,22 @@
+.Home {
+  height: 100%;
+  background-color: lightpink;
+  &__container {
+    transform: translateY(-50%);
+  }
+}
+
+main {
+  position: relative;
+  z-index: 3;
+}
+
+.Map {
+  background-color: green;
+  height: 50rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}

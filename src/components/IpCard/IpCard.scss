@@ -1,0 +1,26 @@
+.IpCard {
+  background-color: white;
+  display: flex;
+  padding: 3rem 0rem;
+  border-radius: 1.5rem;
+
+  &__info {
+    flex: 0 0 20%;
+    padding: 0rem 3rem;
+    &:not(:last-child) {
+      border-right: 1px solid lightgrey;
+    }
+  }
+  &__header {
+    font-size: var(--fs-300);
+    color: var(--color-dark-1);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__result {
+    margin-top: 1rem;
+    font-size: var(--fs-500);
+    letter-spacing: -0.23px;
+    line-height: 3rem;
+  }
+}

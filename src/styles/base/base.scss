@@ -2,8 +2,9 @@
 
 :root {
   //color
-  --grey-dark-2: hsl(0, 0%, 17%);
-  --grey-dark: hsl(0, 0%, 59%);
+  --color-dark-2: hsl(0, 0%, 17%);
+  --color-dark-1: hsl(0, 0%, 59%);
+  --color-light: 255, 255, 255;
 
   //font
   --primary-font: "Rubik", sans-serif;
@@ -34,7 +35,9 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   box-sizing: border-box;
+  font-family: var(--primary-font);
   font-size: var(--fs-400);
+  display: grid;
 }
 
 img {

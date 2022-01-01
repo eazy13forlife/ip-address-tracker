@@ -1,5 +1,7 @@
 import { combineReducers } from "redux";
 
+import ipDataReducer from "./ipDataReducer.js";
+
 export default combineReducers({
-  hello: () => "4",
+  ipData: ipDataReducer,
 });

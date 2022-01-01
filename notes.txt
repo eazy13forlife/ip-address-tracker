@@ -1,0 +1,8 @@
+From our api, i am using ip-api.com
+
+i need ip address
+location country,city,state,zipcode
+timezone
+isp(internet service provider)
+
+use leaflet.js to generate the map
