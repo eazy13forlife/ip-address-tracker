@@ -10,10 +10,6 @@ import LeafletMap from "../../components/LeafletMap/LeafletMap.js";
 const Home = () => {
   const dispatch = useDispatch();
 
-  const { lat, lon } = useSelector((state) => {
-    return state.ipData;
-  });
-
   useEffect(() => {
     dispatch(fetchIpData(""));
   }, []);
