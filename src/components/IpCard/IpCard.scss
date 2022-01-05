@@ -1,14 +1,29 @@
+@use "../../styles/abstracts";
+
 .IpCard {
   background-color: white;
   display: flex;
   padding: 3rem 0rem;
   border-radius: 1.5rem;
   box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.45);
+  @include abstracts.respondMax(abstracts.$tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
+
   &__info {
     flex: 0 0 20%;
     padding: 0rem 3rem;
     &:not(:last-child) {
       border-right: 1px solid lightgrey;
+      @include abstracts.respondMax(abstracts.$tablet) {
+        border-right: none;
+      }
+    }
+    @include abstracts.respondMax(abstracts.$tablet) {
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
     }
   }
   &__header {

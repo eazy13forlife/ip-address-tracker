@@ -1,3 +1,5 @@
+@use "../../styles/abstracts";
+
 .Header {
   background-image: url("../../images/pattern-bg.png");
   background-size: cover;
@@ -5,6 +7,9 @@
   padding-top: 3rem;
   font-family: var(--primary-font);
   font-weight: 400;
+  @include abstracts.respondMax(abstracts.$tablet) {
+    height: 35rem;
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -24,6 +29,9 @@
     background-color: pink;
     border-radius: 1.3rem;
     position: relative;
+    @include abstracts.respondMax(abstracts.$tablet-small) {
+      width: 100%;
+    }
   }
   &__input {
     width: 100%;
@@ -36,6 +44,9 @@
     position: relative;
     &::placeholder {
       color: var(--color-dark-1);
+      @include abstracts.respondMax(abstracts.$tablet-small) {
+        font-size: 3.5vw;
+      }
     }
   }
   &__input-button {

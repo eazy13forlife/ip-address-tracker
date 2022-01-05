@@ -17,7 +17,7 @@ const IpCard = () => {
     region = "",
     zip = "",
   } = ipData;
-  console.log(status);
+
   return (
     <div className="IpCard">
       <div className="IpCard__info">

@@ -13,6 +13,9 @@
   --fs-500: 2.6rem;
   --fs-400: 1.8rem;
   --fs-300: 1.2rem;
+  @include abstracts.respondMax(abstracts.$desktop-small) {
+    --fs-500: 2rem;
+  }
   @include abstracts.respondMax(abstracts.$mobile) {
     --fs-600: 2.6rem;
     --fs-500: 2rem;

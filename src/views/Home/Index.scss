@@ -1,6 +1,7 @@
+@use "../../styles/abstracts";
+
 .Home {
   height: 100%;
-  background-color: lightpink;
   &__container {
     transform: translateY(-50%);
   }
