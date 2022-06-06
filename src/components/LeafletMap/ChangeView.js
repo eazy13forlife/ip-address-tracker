@@ -1,4 +1,3 @@
-import React from "react";
 import { useMap } from "react-leaflet";
 
 const ChangeView = ({ lat, lon, zoom }) => {

@@ -5,7 +5,6 @@ import {
   TileLayer,
   Marker,
   Popup,
-  useMap,
   ZoomControl,
 } from "react-leaflet";
 import ChangeView from "./ChangeView.js";
