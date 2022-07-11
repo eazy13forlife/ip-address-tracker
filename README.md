@@ -1,5 +1,4 @@
 # IP Address Tracker
-
 An IP Address tracker application.
 
 ## Images
