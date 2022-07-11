@@ -9,27 +9,26 @@ const IpCard = () => {
   });
 
   const {
-    status,
-    query = "",
+    error,
+    ip = "",
     timezone = "",
-    isp = "",
+    org = "",
     city = "",
     region = "",
-    zip = "",
+    postal = "",
   } = ipData;
 
+  console.log(ipData);
   return (
     <div className="IpCard">
       <div className="IpCard__info">
         <h3 className="IpCard__header">Ip Address</h3>
-        <p className="IpCard__result">{query}</p>
+        <p className="IpCard__result">{ip}</p>
       </div>
       <div className="IpCard__info">
         <h3 className="IpCard__header">Location</h3>
         <p className="IpCard__result">
-          {status === null || status === "fail"
-            ? ""
-            : `${city}, ${region} ${zip}`}
+          {error ? "" : `${city}, ${region} ${postal}`}
         </p>
       </div>
       <div className="IpCard__info">
@@ -37,8 +36,8 @@ const IpCard = () => {
         <p className="IpCard__result">{timezone}</p>
       </div>
       <div className="IpCard__info">
-        <h3 className="IpCard__header">Isp</h3>
-        <p className="IpCard__result">{isp}</p>
+        <h3 className="IpCard__header">Org</h3>
+        <p className="IpCard__result">{org}</p>
       </div>
     </div>
   );

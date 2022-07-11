@@ -1,18 +1,13 @@
 import types from "../actions/types.js";
 
 const initialIpData = {
-  status: null,
-  country: "",
-  countryCode: "",
-  region: "",
-  regionName: "",
-  city: "",
-  zip: "",
-  lat: "",
-  lon: "",
+  error: "",
+  ip: "",
   timezone: "",
-  isp: "",
-  query: "",
+  org: "",
+  city: "",
+  region: "",
+  postal: "",
 };
 
 const ipDataReducer = (state = initialIpData, action) => {
